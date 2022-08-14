@@ -13,7 +13,8 @@ export default function Employee({ data }) {
         <TableRow
           label="Field"
           value="Value"
-          className="bg-gray-600 text-white font-semibold text-2xl"
+          className=" text-white font-semibold text-2xl"
+          color="bg-gray-600"
         />
         <TableRow label="Fist Name" value={emp.first_name} />
         <TableRow label="Last Name" value={emp.last_name} color="bg-white" />
