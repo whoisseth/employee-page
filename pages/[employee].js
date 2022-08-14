@@ -2,13 +2,15 @@ import React from 'react'
 import classnames from 'classnames'
 import Link from 'next/link'
 import { TbArrowBackUp } from 'react-icons/tb'
+import Layout from '../components/Layout'
 
 export default function Employee({ data }) {
   const emp = data[0]
 
   return (
-    <div className="flex items-center justify-center w-screen h-screen relative">
-      <BackBtn />
+    // <div className="flex items-center justify-center w-screen h-screen relative">
+    //   <BackBtn />
+    <Layout>
       <div className="   border-[#EAEAEA] w-fit ">
         <TableRow
           label="Field"
@@ -24,7 +26,8 @@ export default function Employee({ data }) {
         <TableRow label="Salary" value={emp.salary} color="bg-white" />
         <TableRow label="Designation" value={emp.designation} />
       </div>
-    </div>
+    </Layout>
+    // </div>
   )
 }
 

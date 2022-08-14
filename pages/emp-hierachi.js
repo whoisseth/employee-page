@@ -1,9 +1,8 @@
-import EmpTablePage from '../components/Pages/EmpTablePage'
-
-export default function Home({ data }) {
+import EmpHierachiPage from './../components/Pages/EmpHierachiPage'
+export default function EmpHierarchi({ data }) {
   return (
     <>
-      <EmpTablePage data={data} />
+      <EmpHierachiPage data={data} />
     </>
   )
 }
